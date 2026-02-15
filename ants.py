@@ -178,7 +178,7 @@ class Ant:
 
         # path determination based on concentrations in the top left
         #  (-45degree), forward (0 degree), and right (45degree) grid spaces
-        if C_0 > 0.0 and C_0 > 0.0: # if forward space has most pheromone, trail moves forward
+        if C_0 > 0 and C_0 > 0: # if forward space has most pheromone, trail moves forward
             delta_turn = 0
         elif C_1 > C_7: # if C(1) > C(7): # if left concentration is greater than right concentration, move left
             delta_turn = 1
